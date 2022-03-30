@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Birthday</title>
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <!--Bootstrap-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <!--Google Fonts-->
+        <!--<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+
+        <!--CSS File-->
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
+    </head>
+    <body background="birthday.jpg">
+        <center>
+        <h2 class = "btn btn-danger header">Birthday Diary</h2><br><br>
+        <div class="container">
+            <h3 id = "purpose">Let's Wish Our Family Members and Friends A Very Happy Birthday !!</h3>
+            <h3 class="btn btn-primary" id="hint">Choose a Person : </h3><br><br>
+           <!--dropdown-->
+           <select id = "family">
+               <option value = "mother">Sudeshna Ghosh Baisya</option>
+               <option value = "father">Sujay Kumar Baisya</option>
+               <option value = "grandpa">Swapan Kumar Baisya</option>
+               <option value = "grandma">Swapna Baisya</option>
+               <option value = "m_grandma">Bharati Ghosh</option>
+               <option value = "cousin1">Nilak Kumar Baisya</option>
+               <option value = "cousin2">Niloy Kumar Baisya</option>
+               <option value = "nephew">Priyanshu Baisya</option>
+               <option value = "cousin_s">Indrani Baisya</option>
+               <option value = "aunt">Sayoni Baisya</option>
+               <option value = "friend">Pragya Mondal</option>
+           </select>
+           <br><br>
+           <!--dropdown-->
+           <button class="btn btn-danger" id = "show_info" onclick="show_details()">Display Information</button>
+           <br><br>
+           <div class="btn btn-info container" id="details">
+
+           </div>
+        </div>
+    </center>
+
+    <script src="main.js"></script>
+    </body>
+</html>
